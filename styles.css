@@ -44,23 +44,23 @@ ul {
 .header-cont {
     width: 100%;
     position: fixed;
-    height: 50px;
+    height: 70px;
     top: 0;
     left: 0;
     background-color: darkseagreen;
     border: 1px solid #ccc;
+    padding: 2ex;
 }
 
 .header {
     margin: 0 auto;
     width: fit-content;
     font-weight: normal;
-    color: #fefefe;
-    padding-top: 0.5ex;
+    color: #333;
 }
 
 .content {
-    margin-top: 30px;
+    margin-top: 40px;
     padding: 1em;
 }
 
@@ -75,6 +75,7 @@ ul {
 
 .location {
     font-size: 14px;
+    float: right;
 }
 
 .details,
@@ -165,6 +166,11 @@ ul {
 
 .experience .subsection {
     border-bottom: 1px solid #ccc;
+    margin-top: 1ex;
+}
+
+.experience h4 {
+    margin-top: 0;
 }
 
 .projects {
