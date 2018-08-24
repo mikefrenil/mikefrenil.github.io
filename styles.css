@@ -1,6 +1,44 @@
 * {
     box-sizing: border-box;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #fefefe;
+    color: #666;
+}
+
+p {
+    margin: 0.5ex 0;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+h3,
+h4 {
+    text-transform: uppercase;
+    margin: 1ex 0;
+}
+
+h4 {
+    color: #333
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.col-2 {
+    width: 16.67%
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .header-cont {
@@ -10,12 +48,13 @@
     top: 0;
     left: 0;
     background-color: darkseagreen;
+    border: 1px solid #ccc;
 }
 
 .header {
     margin: 0 auto;
     width: fit-content;
-    font-weight: lighter;
+    font-weight: normal;
     color: #fefefe;
     padding-top: 0.5ex;
 }
@@ -29,6 +68,43 @@
     padding: 1em;
 }
 
+.description {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.location {
+    font-size: 14px;
+}
+
+.details,
+.info,
+.languages {
+    font-size: 12px;
+}
+
+.details li,
+.languages li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 1ex;
+}
+
+.details li:first-of-type {
+    padding-left: 0;
+}
+
+.details li:not(:last-of-type) {
+    border-right: 1px solid #ccc;
+}
+
+.languages li {
+    color: #333;
+    background-color: darkseagreen;
+    border-radius: 1ex;
+    padding: 0.2ex 1ex;
+}
+
 .side {
     padding: 1em;
     width: 25%;
@@ -37,8 +113,6 @@
 }
 
 .side ul {
-    padding: 0;
-    margin: 0;
     max-height: 300px;
 }
 
@@ -54,6 +128,7 @@
     margin: 0.1ex;
     display: flex;
     align-items: center;
+    color: #333;
 }
 
 .side>.section:not(.links) li:not(.intermediate):not(.beginner) {
@@ -80,22 +155,37 @@
     float: left;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-p {
-    margin: 1ex;
-}
-
 .section {
-    padding: 10px 0;
+    padding-bottom: 1em;
 }
 
-.main .subsection {
+.subsection {
+    padding-bottom: 1em;
+}
+
+.experience .subsection {
     border-bottom: 1px solid #ccc;
+}
+
+.projects {
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.projects li {
+    padding: 0.5ex 0;
+}
+
+.experience h4,
+.designation {
+    display: inline-block;
+}
+
+.designation {
+    font-weight: lighter;
+    font-size: 85%;
+    border-left: 1px solid #ccc;
+    padding-left: 1ex;
 }
 
 a:link {
