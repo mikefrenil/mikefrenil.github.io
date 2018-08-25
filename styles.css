@@ -31,8 +31,29 @@ ul {
     margin: 0;
 }
 
-.col-2 {
-    width: 16.67%
+/* For mobile phones: */
+
+.main,
+.side {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+        width: 50%;
+    }
+    .side {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .main {
+        width: 75%;
+    }
+    .side {
+        width: 25%;
+    }
 }
 
 .row::after {
@@ -108,9 +129,7 @@ ul {
 
 .side {
     padding: 1em;
-    width: 25%;
     float: left;
-    min-width: 220px;
 }
 
 .side ul {
@@ -145,7 +164,8 @@ ul {
     height: 50px;
 }
 
-.side>.section:not(.links) li:hover {
+.side>.section:not(.links) li:hover,
+.languages li:hover {
     background-color: mediumaquamarine;
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
@@ -153,7 +173,6 @@ ul {
 }
 
 .main {
-    width: 75%;
     float: left;
 }
 
